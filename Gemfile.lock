@@ -1,5 +1,5 @@
 GIT
-  remote: https://github.com/neektza/rmeetup.git
+  remote: https://github.com/wiseleyb/rmeetup.git
   revision: 1d290142eb3a5ee329111620ecefe0140c6b2da8
   specs:
     rMeetup (2.0.0)
