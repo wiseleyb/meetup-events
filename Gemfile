@@ -30,7 +30,7 @@ gem 'spring',        group: :development
 
 gem 'haml'
 gem 'ratchet-rails'
-gem 'rMeetup', git: 'https://github.com/wiseleyb/rmeetup.git'
+gem 'rMeetup', git: 'https://github.com/wiseleyb/rmeetup.git', require: 'RMeetup'
 
 # heroku https://devcenter.heroku.com/articles/getting-started-with-rails4
 gem 'rails_12factor', group: :production
