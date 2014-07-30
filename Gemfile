@@ -32,6 +32,9 @@ gem 'haml'
 gem 'ratchet-rails'
 gem 'rMeetup', git: 'https://github.com/neektza/rmeetup.git'
 
+# heroku https://devcenter.heroku.com/articles/getting-started-with-rails4
+gem 'rails_12factor', group: :production
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
