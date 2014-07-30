@@ -1,0 +1,28 @@
+%h3 Instructions
+
+%p Param options
+%ul.table-view
+  %li.table-view-cell
+    %strong zip
+    Specify zip for search (25 mile radius). Defaults to 94110 (SF)
+  %li.table-view-cell
+    %strong text
+    Filter results that contain text. Defaults to 'soccer'
+  %li.table-view-cell
+    %strong debug
+    Show json results. Defaults to false
+  %li.table-view-cell
+    Example
+    - url = root_url(zip: '94110', text: 'soccer', debug: 'true')
+    = link_to url, url
+
+%h3 Results
+%ul.table-view
+  - @results.each do |result|
+    - event = result.event
+    %li.table-view-cell
+      = link_to event['name'], event['event_url'], target: "_#{event['id']}"
+      .description
+        = event['description'].try(:html_safe)
+      - if params[:debug] == 'true'
+        %pre= debug(result)
